@@ -499,9 +499,9 @@
 
 /* Move hero buttons down */
 .hero-copy .hero-actions {
-  margin-top: 32px !important;
+  margin-top: 52px !important;
   position: relative;
-  top: 20px;
+  top: 30px;
 }
 
 /* Remove the section number and its divider */
