@@ -442,4 +442,59 @@
   padding-top: 0 !important;
 }
 
+/* Reduce the hero headline size */
+.hero-copy h1 {
+  font-size: clamp(42px, 4.4vw, 64px) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -2px;
+  max-width: 680px;
+}
+
+/* Align both hero buttons */
+.hero-copy .hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Make both buttons the same size */
+.hero-copy .hero-actions a,
+.hero-copy .hero-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 155px;
+  height: 46px;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 600;
+  border-radius: 999px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Keep buttons aligned on smaller screens */
+@media (max-width: 520px) {
+  .hero-copy h1 {
+    font-size: clamp(36px, 9vw, 46px) !important;
+    line-height: 1.1 !important;
+    letter-spacing: -1.5px;
+  }
+
+  .hero-copy .hero-actions {
+    gap: 10px;
+  }
+
+  .hero-copy .hero-actions a,
+  .hero-copy .hero-actions button {
+    min-width: 135px;
+    height: 42px;
+    padding: 0 14px;
+    font-size: 13px;
+  }
+}
+
 
