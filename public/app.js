@@ -37,6 +37,10 @@ form.addEventListener('submit', async (event) => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
     });
+    const contentType = response.headers.get('content-type') || '';
+    if (!contentType.includes('application/json')) {
+      throw new Error('The signup service is not available yet. Please try again shortly.');
+    }
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || 'We could not send your details. Please try again.');
     form.reset();
