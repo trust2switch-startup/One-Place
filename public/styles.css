@@ -497,4 +497,21 @@
   }
 }
 
+/* Move hero buttons down */
+.hero-copy .hero-actions {
+  margin-top: 32px !important;
+  position: relative;
+  top: 20px;
+}
+
+/* Remove the section number and its divider */
+.hero-index {
+  display: none !important;
+}
+
+/* Optional: add space below the headline */
+.hero-copy h1 {
+  margin-bottom: 24px;
+}
+
 
