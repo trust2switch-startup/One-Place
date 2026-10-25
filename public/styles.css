@@ -343,3 +343,90 @@
     display: none;
   }
 }
+
+/* Six white service cards with more spacing */
+.hero-art .art-card {
+  background: #ffffff !important;
+  width: 40%;
+  min-height: 76px;
+  padding: 12px 16px;
+  border: 1px solid #eeeae2;
+  border-radius: 24px;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+/* Top and bottom cards */
+.hero-art .card-edu {
+  top: -2%;
+  left: 30%;
+}
+
+.hero-art .card-move {
+  top: 84%;
+  left: 30%;
+}
+
+/* Middle row */
+.hero-art .card-marketing {
+  top: 19%;
+  left: -2%;
+}
+
+.hero-art .card-home {
+  top: 19%;
+  right: -2%;
+}
+
+/* Lower row — farther from the middle row */
+.hero-art .card-workforce {
+  top: 61%;
+  left: -2%;
+}
+
+.hero-art .card-shopping {
+  top: 61%;
+  right: -2%;
+}
+
+/* Keep the central circle centered */
+.hero-art .hero-sun {
+  left: 27%;
+  top: 27%;
+  width: 46%;
+  z-index: 1;
+}
+
+/* Keep orbit lines behind the cards */
+.hero-art .orbit {
+  z-index: 0;
+}
+
+/* Mobile layout */
+@media (max-width: 520px) {
+  .hero-art .art-card {
+    width: 44%;
+    min-height: 60px;
+    padding: 8px;
+    border-radius: 16px;
+  }
+
+  .hero-art .card-edu,
+  .hero-art .card-move {
+    left: 28%;
+  }
+
+  .hero-art .card-marketing,
+  .hero-art .card-home {
+    top: 21%;
+  }
+
+  .hero-art .card-workforce,
+  .hero-art .card-shopping {
+    top: 60%;
+  }
+
+  .hero-art .card-move {
+    top: 82%;
+  }
+}
