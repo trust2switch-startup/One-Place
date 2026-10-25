@@ -430,3 +430,14 @@
     top: 82%;
   }
 }
+
+/* Reduce gap between navbar and hero content */
+.hero {
+  margin-top: 0 !important;
+  padding-top: 20px !important;
+}
+
+.hero-copy {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
